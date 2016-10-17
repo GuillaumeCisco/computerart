@@ -159,6 +159,7 @@ export default class Presentation extends React.Component {
                                   source={require("raw!../assets/99_bottles")}
                                   margin="20px auto"/>
                         <Link target="_blank" href="http://www.99-bottles-of-beer.net/lyrics.html">http://www.99-bottles-of-beer.net/lyrics.html</Link>
+                        <Link target="_blank" href="https://en.m.wikipedia.org/wiki/International_Obfuscated_C_Code_Contest">https://fr.m.wikipedia.org/wiki/International_Obfuscated_C_Code_Contest</Link>
                     </Slide>
                     <Slide bgColor="black">
                         <BlockQuote>
@@ -254,13 +255,21 @@ export default class Presentation extends React.Component {
                         </Appear>
                     </Slide>
                     <Slide>
-                        <Heading fit size={1} margin={'50px 0'}>Are computer programmers, artists?</Heading>
+                        <Heading fit size={1} margin={'50px 0'}>Can computer programmers become artists?</Heading>
                         <Text>
                             computer programming is an art, because it applies accumulated knowledge to the world,
                             because it requires skill and ingenuity, and especially because it produces objects of
                             beauty. A programmer who subconsciously views himself as an artist will enjoy what he does
                             and will do it better.
                         </Text>
+                    </Slide>
+                    <Slide>
+                        <Heading fit size={1} margin={'50px 0'}>References</Heading>
+                        <Link target="_blank" href="http://www.paulgraham.com/knuth.html">Knuth: Computer Programming as an Art</Link>
+                        <Link target="_blank" href="https://www.nap.edu/read/10671/chapter/1">Beyond Productivity</Link>
+                        <Link target="_blank" href="http://home.deib.polimi.it/schiaffo/TFI/Computer_Science_Art_Verdicchio.pdf">Computer Science and Art: Then and Now</Link>
+                        
+                        <Text>Thanks to my lovely girlfriend for having an argument about this passionating subject</Text>
                     </Slide>
                 </Deck>
             </Spectacle>
