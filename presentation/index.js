@@ -231,6 +231,7 @@ export default class Presentation extends React.Component {
                             <ListItem>Internet Art</ListItem>
                             <ListItem>Software Art</ListItem>
                             <ListItem>Video Game Art</ListItem>
+                            <ListItem>Security/Hacking Art</ListItem>
                         </List>
                     </Slide>
                     <Slide note="it is a real achievement to master complexity and to
