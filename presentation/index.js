@@ -222,6 +222,7 @@ export default class Presentation extends React.Component {
                     </Slide>
                     <Slide transition={["zoom"]} bgColor="primary">
                         <Heading size={1}>Computer Arts</Heading>
+                        <Text>Computer Arts ≠ Computer Art</Text>
                         <List>
                             <ListItem>New Media Art</ListItem>
                             <ListItem>Multimedia Art</ListItem>
