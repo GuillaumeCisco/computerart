@@ -159,7 +159,8 @@ export default class Presentation extends React.Component {
                                   source={require("raw!../assets/99_bottles")}
                                   margin="20px auto"/>
                         <Link target="_blank" href="http://www.99-bottles-of-beer.net/lyrics.html">http://www.99-bottles-of-beer.net/lyrics.html</Link>
-                        <Link target="_blank" href="https://en.m.wikipedia.org/wiki/International_Obfuscated_C_Code_Contest">https://fr.m.wikipedia.org/wiki/International_Obfuscated_C_Code_Contest</Link>
+                        <Link target="_blank"
+                              href="https://en.m.wikipedia.org/wiki/International_Obfuscated_C_Code_Contest">https://fr.m.wikipedia.org/wiki/International_Obfuscated_C_Code_Contest</Link>
                     </Slide>
                     <Slide bgColor="black">
                         <BlockQuote>
@@ -222,18 +223,22 @@ export default class Presentation extends React.Component {
                     </Slide>
                     <Slide transition={["zoom"]} bgColor="primary">
                         <Heading size={1}>Computer Arts</Heading>
-                        <Text>Computer Arts ≠ Computer Art</Text>
-                        <List>
-                            <ListItem>New Media Art</ListItem>
-                            <ListItem>Multimedia Art</ListItem>
-                            <ListItem>Digital Art</ListItem>
-                            <ListItem>Virtual Art</ListItem>
-                            <ListItem>Cybernetic</ListItem>
-                            <ListItem>Internet Art</ListItem>
-                            <ListItem>Software Art</ListItem>
-                            <ListItem>Video Game Art</ListItem>
-                            <ListItem>Security/Hacking Art</ListItem>
-                        </List>
+                        <Appear>
+                            <Text>Computer Arts ≠ Computer Art</Text>
+                        </Appear>
+                        <Appear>
+                            <List>
+                                <ListItem>New Media Art</ListItem>
+                                <ListItem>Multimedia Art</ListItem>
+                                <ListItem>Digital Art</ListItem>
+                                <ListItem>Virtual Art</ListItem>
+                                <ListItem>Cybernetic</ListItem>
+                                <ListItem>Internet Art</ListItem>
+                                <ListItem>Software Art</ListItem>
+                                <ListItem>Video Game Art</ListItem>
+                                <ListItem>Security/Hacking Art</ListItem>
+                            </List>
+                        </Appear>Appear>
                     </Slide>
                     <Slide note="it is a real achievement to master complexity and to
                             establish a system of consistent rules." bgColor="black">
@@ -267,12 +272,16 @@ export default class Presentation extends React.Component {
                     </Slide>
                     <Slide>
                         <Heading fit size={1} margin={'50px 0'}>References</Heading>
-                        <Link target="_blank" href="http://www.paulgraham.com/knuth.html">Knuth: Computer Programming as an Art</Link>
+                        <Link target="_blank" href="http://www.paulgraham.com/knuth.html">Knuth: Computer Programming as
+                            an Art</Link>
                         <br/>
                         <Link target="_blank" href="https://www.nap.edu/read/10671/chapter/1">Beyond Productivity</Link>
                         <br/>
-                        <Link target="_blank" href="http://home.deib.polimi.it/schiaffo/TFI/Computer_Science_Art_Verdicchio.pdf">Computer Science and Art: Then and Now</Link>
-                        <Text style={{margin: '60px 0 0 0'}}>Thanks to my lovely girlfriend for having an argument about this passionating subject</Text>
+                        <Link target="_blank"
+                              href="http://home.deib.polimi.it/schiaffo/TFI/Computer_Science_Art_Verdicchio.pdf">Computer
+                            Science and Art: Then and Now</Link>
+                        <Text style={{margin: '60px 0 0 0'}}>Thanks to my lovely girlfriend for having an argument about
+                            this passionating subject</Text>
                     </Slide>
                 </Deck>
             </Spectacle>
