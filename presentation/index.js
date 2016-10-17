@@ -266,10 +266,11 @@ export default class Presentation extends React.Component {
                     <Slide>
                         <Heading fit size={1} margin={'50px 0'}>References</Heading>
                         <Link target="_blank" href="http://www.paulgraham.com/knuth.html">Knuth: Computer Programming as an Art</Link>
+                        <br/>
                         <Link target="_blank" href="https://www.nap.edu/read/10671/chapter/1">Beyond Productivity</Link>
+                        <br/>
                         <Link target="_blank" href="http://home.deib.polimi.it/schiaffo/TFI/Computer_Science_Art_Verdicchio.pdf">Computer Science and Art: Then and Now</Link>
-                        
-                        <Text>Thanks to my lovely girlfriend for having an argument about this passionating subject</Text>
+                        <Text style={{margin: '60px 0 0 0'}}>Thanks to my lovely girlfriend for having an argument about this passionating subject</Text>
                     </Slide>
                 </Deck>
             </Spectacle>
