@@ -37,61 +37,76 @@ require("spectacle/lib/themes/default/index.css");
 const images = {
     monochrome: require('../assets/white-monochrome.jpg'),
     rage: require('../assets/Derpina-rage-comic-joke.jpg'),
+    bg: require('../assets/bg.jpg'),
 };
 
 preloader(images);
 
-const theme = createTheme({
-    primary: "#ff4081"
+// clear blue: #00abc9
+// dark blue: #104974
+// dark grey: #56595c
+
+const clearBlue = '#00abc9',
+    darkBlue = '#104974',
+    darkGrey = '#56595c';
+
+let theme = createTheme({
+    primary: darkBlue,
+    secondary: clearBlue,
+    tertiary: darkGrey
 });
+
+
+theme.screen.components.quote.color = clearBlue;
+theme.screen.components.cite.color = 'white';
 
 export default class Presentation extends React.Component {
     render() {
         return (
-            <Spectacle theme={theme}>
+            <Spectacle theme={theme} style={{backgroundImage: images.bg.replace("/", "")}}>
                 <Deck transition={["zoom", "slide"]} transitionDuration={500} progress="number" controls={true}>
-                    <Slide transition={["zoom"]} bgColor="primary">
-                        <Heading size={1} fit caps textColor="black" margin={'0 0 60px 0'}>
+                    <Slide transition={["slide"]} bgImage={images.bg.replace("/", "")}>
+                        <Heading size={1} fit caps textColor="white" margin={'0 0 60px 0'}>
                             Computer Science and Art
                         </Heading>
-                        <Heading size={2} fit caps textColor="white">
+                        <Heading size={2} fit caps textColor={clearBlue}>
                             Science and Computer Programming
                         </Heading>
                     </Slide>
-                    <Slide transition={["zoom"]} bgColor="primary">
-                        <Heading size={1} caps textColor="black" margin={'0 0 60px 0'}>
+                    <Slide transition={["slide"]} bgImage={images.bg.replace("/", "")}>
+                        <Heading size={1} caps textColor="white" margin={'0 0 60px 0'}>
                             Why?
                         </Heading>
                         <Image src={images.rage.replace("/", "")} margin="0 auto" height="600px"/>
                     </Slide>
-                    <Slide transition={["zoom"]} bgColor="primary"
+                    <Slide transition={["slide"]} bgImage={images.bg.replace("/", "")}
                            notes="Art is the root for Technology and Technique.">
-                        <Heading size={1} caps textColor="black" margin={'0 0 60px 0'}>
+                        <Heading size={1} caps textColor="white" margin={'0 0 60px 0'}>
                             What is art?
                         </Heading>
                         <Appear>
-                            <Text>Art is opposed to Nature and to...</Text>
+                            <Text textColor="white">Art is opposed to Nature and to...</Text>
                         </Appear>
                         <Appear>
-                            <Heading size={4} margin={'20px 0 0 0'}>SCIENCE</Heading>
+                            <Heading textColor="secondary" size={4} margin={'20px 0 0 0'}>SCIENCE</Heading>
                         </Appear>
                         <Appear>
-                            <Text margin={'40px 0 0 0'}>But Art tends towards <S type="underline">beauty</S>...</Text>
+                            <Text textColor="white" margin={'40px 0 0 0'}>But Art tends towards <span style={{color: clearBlue}}><S type="underline">beauty</S></span>...</Text>
                         </Appear>
                         <Appear style={{width: '50%'}}>
-                            <Text textAlign="left" margin="30px auto 20px">
+                            <Text textColor="white" textAlign="left" margin="30px auto 20px">
                                 Latin: ars, artis, <S type="strikethrough">artemis</S><br/>
                                 Greek: τεχνη
                             </Text>
                         </Appear>
                     </Slide>
-                    <Slide transition={["zoom"]} bgColor="primary">
-                        <Heading size={1}>Differents art theme</Heading>
+                    <Slide transition={["slide"]} bgImage={images.bg.replace("/", "")}>
+                        <Heading size={1} textColor="white">Differents art theme</Heading>
                         <Layout>
                             <Fill>
                                 <div style={{padding: '20px 40px'}}>
-                                    <Heading size={6} textAlign="left">Fine Art</Heading>
-                                    <List>
+                                    <Heading textColor="white" size={6} textAlign="left">Fine Art</Heading>
+                                    <List textColor="white">
                                         <ListItem>painting</ListItem>
                                         <ListItem>sculpture</ListItem>
                                     </List>
@@ -99,8 +114,8 @@ export default class Presentation extends React.Component {
                             </Fill>
                             <Fill>
                                 <div style={{padding: '20px 40px'}}>
-                                    <Heading size={6} textAlign="left">Liberal Art</Heading>
-                                    <List>
+                                    <Heading textColor="white" size={6} textAlign="left">Liberal Art</Heading>
+                                    <List textColor="white">
                                         <ListItem>grammar</ListItem>
                                         <ListItem>rhetoric</ListItem>
                                         <ListItem>logic</ListItem>
@@ -112,9 +127,9 @@ export default class Presentation extends React.Component {
                                 </div>
                             </Fill>
                         </Layout>
-                        <Heading size={7} textAlign="left">Manual Art: plowing</Heading>
+                        <Heading textColor="white" size={7} textAlign="left">Manual Art: plowing</Heading>
                     </Slide>
-                    <Slide bgColor="black">
+                    <Slide transition={["slide"]} bgImage={images.bg.replace("/", "")}>
                         <BlockQuote>
                             <Quote>
                                 It was once thought that the imaginative outlook of the artist was death for the
@@ -123,16 +138,16 @@ export default class Presentation extends React.Component {
                             </Quote>
                         </BlockQuote>
                     </Slide>
-                    <Slide transition={["none"]}>
-                        <Heading size={1} fit margin={'0 0 60px 0'}>
+                    <Slide transition={["none"]} bgImage={images.bg.replace("/", "")}>
+                        <Heading textColor="white" size={1} fit margin={'0 0 60px 0'}>
                             White Monochrome (Li Yuan-chia)
                         </Heading>
                         <Image src={images.monochrome.replace("/", "")} margin="0 auto" height="600px"/>
-                        <Link target="_blank"
+                        <Link textColor="tertiary" target="_blank"
                               href="http://www.tate.org.uk/art/artworks/li-monochrome-white-painting-t11871">http://www.tate.org.uk/art/artworks/li-monochrome-white-painting-t11871</Link>
                     </Slide>
-                    <Slide transition={["none"]}>
-                        <Heading size={1} fit margin={'0 0 60px 0'}>
+                    <Slide transition={["none"]} bgImage={images.bg.replace("/", "")}>
+                        <Heading textColor="white" size={1} fit margin={'0 0 60px 0'}>
                             Whitespace (programming language)
                         </Heading>
                         <CodePane
@@ -140,10 +155,10 @@ export default class Presentation extends React.Component {
                             source={require("raw!../assets/whitespace")}
                             margin="20px auto"
                         />
-                        <Text>This code prints Hello World</Text>
+                        <Text textColor="white">This code prints Hello World</Text>
                     </Slide>
-                    <Slide transition={['none']}>
-                        <Heading size={1} fit margin={'0 0 60px 0'}>
+                    <Slide transition={['none']} bgImage={images.bg.replace("/", "")}>
+                        <Heading textColor="white" size={1} fit margin={'0 0 60px 0'}>
                             Whitespace (programming language)
                         </Heading>
                         <CodePane
@@ -151,18 +166,20 @@ export default class Presentation extends React.Component {
                             source={require("raw!../assets/whitespace-light")}
                             margin="20px auto"
                         />
-                        <Link target="_blank" href="https://en.wikipedia.org/wiki/Whitespace_(programming_language)">https://en.wikipedia.org/wiki/Whitespace_(programming_language)</Link>
+                        <Link textColor="tertiary" target="_blank"
+                              href="https://en.wikipedia.org/wiki/Whitespace_(programming_language)">https://en.wikipedia.org/wiki/Whitespace_(programming_language)</Link>
                     </Slide>
-                    <Slide>
-                        <Heading size={1}>99 bottles of beer</Heading>
+                    <Slide transition={["slide"]} bgImage={images.bg.replace("/", "")}>
+                        <Heading textColor="white" size={1}>99 bottles of beer</Heading>
                         <CodePane lang="perl"
                                   source={require("raw!../assets/99_bottles")}
                                   margin="20px auto"/>
-                        <Link target="_blank" href="http://www.99-bottles-of-beer.net/lyrics.html">http://www.99-bottles-of-beer.net/lyrics.html</Link>
-                        <Link target="_blank"
+                        <Link textColor="tertiary" target="_blank" href="http://www.99-bottles-of-beer.net/lyrics.html">http://www.99-bottles-of-beer.net/lyrics.html</Link>
+                        <br/>
+                        <Link textColor="tertiary" target="_blank"
                               href="https://en.m.wikipedia.org/wiki/International_Obfuscated_C_Code_Contest">https://fr.m.wikipedia.org/wiki/International_Obfuscated_C_Code_Contest</Link>
                     </Slide>
-                    <Slide bgColor="black">
+                    <Slide transition={["slide"]} bgImage={images.bg.replace("/", "")}>
                         <BlockQuote>
                             <Quote>
                                 Logic is "the Science of Sciences, and the Art of
@@ -179,7 +196,7 @@ export default class Presentation extends React.Component {
                             </Appear>
                         </BlockQuote>
                     </Slide>
-                    <Slide bgColor="black">
+                    <Slide transition={["slide"]} bgImage={images.bg.replace("/", "")}>
                         <Text textColor="white"
                               note="Thus, the science of astronomy was the basis for the art of navigation. distinction between 'science' and 'engineering.'">
                             "science" is being used to stand for knowledge, and "art" for the application of knowledge.
@@ -191,9 +208,9 @@ export default class Presentation extends React.Component {
                             </Text>
                         </Appear>
                     </Slide>
-                    <Slide>
-                        <Heading size="1" fit>Work of Art and Science</Heading>
-                        <Text>
+                    <Slide transition={["slide"]} bgImage={images.bg.replace("/", "")}>
+                        <Heading textColor="white" size={1} fit>Work of Art and Science</Heading>
+                        <Text textColor="white">
                             Photography, Dictionary...
                         </Text>
                         <Appear>
@@ -207,8 +224,8 @@ export default class Presentation extends React.Component {
                             </Text>
                         </Appear>
                     </Slide>
-                    <Slide transition={["slide"]} bgColor="black">
-                        <Heading size={1} fit margin={'0 0 60px 0'}>
+                    <Slide transition={["slide"]} bgImage={images.bg.replace("/", "")}>
+                        <Heading textColor="white" size={1} fit margin={'0 0 60px 0'}>
                             Transforming the art of programming into a science
                         </Heading>
                         <Appear>
@@ -221,13 +238,14 @@ export default class Presentation extends React.Component {
                             </BlockQuote>
                         </Appear>
                     </Slide>
-                    <Slide transition={["zoom"]} bgColor="primary">
-                        <Heading size={1}>Computer Arts</Heading>
+                    <Slide transition={["slide"]} bgImage={images.bg.replace("/", "")}>
+                        <Heading textColor="white" size={1}>Computer Arts</Heading>
                         <Appear>
-                            <Text>Computer Arts ≠ Computer Art</Text>
+                            <Text textColor="white" margin={'20px 0 0 0'}>Computer Arts <span
+                                style={{color: clearBlue}}>≠</span> Computer Art</Text>
                         </Appear>
                         <Appear>
-                            <List>
+                            <List textColor="white">
                                 <ListItem>New Media Art</ListItem>
                                 <ListItem>Multimedia Art</ListItem>
                                 <ListItem>Digital Art</ListItem>
@@ -238,13 +256,13 @@ export default class Presentation extends React.Component {
                                 <ListItem>Video Game Art</ListItem>
                                 <ListItem>Security/Hacking Art</ListItem>
                             </List>
-                        </Appear>Appear>
+                        </Appear>
                     </Slide>
-                    <Slide note="it is a real achievement to master complexity and to
-                            establish a system of consistent rules." bgColor="black">
+                    <Slide transition={["slide"]} bgImage={images.bg.replace("/", "")} note="it is a real achievement to master complexity and to
+                            establish a system of consistent rules.">
                         <BlockQuote>
                             <Quote>
-                                programming can give us both intellectual and emotional
+                                Programming can give us both intellectual and emotional
                                 satisfaction
                             </Quote>
                             <Cite>
@@ -254,34 +272,47 @@ export default class Presentation extends React.Component {
                         <Appear>
                             <Text textColor="white">
                                 Programing can be like composing <S type="bold">poetry</S> or <S type="bold">music</S>.
-                                Some programs are <S type="bold">elegant</S>, some are <S type="bold">exquisite</S>,
-                                some are <S type="bold">sparkling</S>.
-                                We can write <S type="bold">grand programs</S>, <S type="bold">noble programs</S>, <S
-                                type="bold">truly magnificent ones!</S>
+                                Some programs are <span style={{color: clearBlue}}><S type="bold">elegant</S></span>,
+                                some are <span style={{color: clearBlue}}><S type="bold">exquisite</S></span>,
+                                some are <span style={{color: clearBlue}}><S type="bold">sparkling</S></span>.
+                                <br/>
+                                <br/>
+                                We can write <span style={{color: clearBlue}}><S type="bold">grand programs</S></span>,
+                                <span style={{color: clearBlue}}><S type="bold"> noble programs</S></span>, <span
+                                style={{color: clearBlue}}><S
+                                type="bold">truly magnificent ones!</S></span>
                             </Text>
                         </Appear>
                     </Slide>
-                    <Slide>
-                        <Heading fit size={1} margin={'50px 0'}>Can computer programmers become artists?</Heading>
-                        <Text>
-                            computer programming is an art, because it applies accumulated knowledge to the world,
-                            because it requires skill and ingenuity, and especially because it produces objects of
-                            beauty. A programmer who subconsciously views himself as an artist will enjoy what he does
-                            and will do it better.
-                        </Text>
+                    <Slide transition={["slide"]} bgImage={images.bg.replace("/", "")}>
+                        <Heading textColor="white" fit size={1} margin={'0 0 100px'}>Can computer programmers become
+                            artists?</Heading>
+                        <Appear>
+                            <Text textColor="white">
+                                Computer programming is an art, because it applies accumulated knowledge to the world,
+                                because it requires skill and ingenuity, and especially because it produces objects of
+                                beauty.
+                                <br/>
+                                <br/>
+                                A programmer who subconsciously views himself as an artist will enjoy what he does and
+                                will do it better.
+                            </Text>
+                        </Appear>
                     </Slide>
-                    <Slide>
-                        <Heading fit size={1} margin={'50px 0'}>References</Heading>
-                        <Link target="_blank" href="http://www.paulgraham.com/knuth.html">Knuth: Computer Programming as
-                            an Art</Link>
+                    <Slide transition={["slide"]} bgImage={images.bg.replace("/", "")}>
+                        <Heading textColor="white" size={2} margin={'50px 0'}>References</Heading>
+                        <Link textColor="tertiary" target="_blank" href="http://www.paulgraham.com/knuth.html">Knuth:
+                            Computer Programming as an Art</Link>
                         <br/>
-                        <Link target="_blank" href="https://www.nap.edu/read/10671/chapter/1">Beyond Productivity</Link>
+                        <Link textColor="tertiary" target="_blank" href="https://www.nap.edu/read/10671/chapter/1">Beyond
+                            Productivity</Link>
                         <br/>
-                        <Link target="_blank"
+                        <Link textColor="tertiary" target="_blank"
                               href="http://home.deib.polimi.it/schiaffo/TFI/Computer_Science_Art_Verdicchio.pdf">Computer
                             Science and Art: Then and Now</Link>
-                        <Text style={{margin: '60px 0 0 0'}}>Thanks to my lovely girlfriend for having an argument about
-                            this passionating subject</Text>
+                        <Text textColor="white" style={{margin: '60px 0 0 0'}}>Thanks to my lovely girlfriend for
+                            having an argument about
+                            this exciting subject</Text>
                     </Slide>
                 </Deck>
             </Spectacle>
