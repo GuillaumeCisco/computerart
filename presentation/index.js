@@ -136,6 +136,9 @@ export default class Presentation extends React.Component {
                                 scientist.
                                 And the logic of science seemed to spell doom to all possible artistic flights of fancy.
                             </Quote>
+                            <Cite>
+                                Robert E. Mueller, The Science of Art
+                            </Cite>
                         </BlockQuote>
                     </Slide>
                     <Slide transition={["none"]} bgImage={images.bg.replace("/", "")}>
@@ -154,6 +157,7 @@ export default class Presentation extends React.Component {
                             lang="whitespace"
                             source={require("raw!../assets/whitespace")}
                             margin="20px auto"
+                            style={{backgroundColor: 'rgb(229, 234, 255)'}}
                         />
                         <Text textColor="white">This code prints Hello World</Text>
                     </Slide>
@@ -165,6 +169,7 @@ export default class Presentation extends React.Component {
                             lang="whitespace"
                             source={require("raw!../assets/whitespace-light")}
                             margin="20px auto"
+                            style={{backgroundColor: 'rgb(229, 234, 255)', color: '#333'}}
                         />
                         <Link textColor="tertiary" target="_blank"
                               href="https://en.wikipedia.org/wiki/Whitespace_(programming_language)">https://en.wikipedia.org/wiki/Whitespace_(programming_language)</Link>

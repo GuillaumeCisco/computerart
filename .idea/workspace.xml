@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ba78854-a9e4-4856-b4fb-aac0b977acb0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presentation/index.js" afterPath="$PROJECT_DIR$/presentation/index.js" />
     </list>
     <ignored path="spectacle-boilerplate.iws" />
@@ -29,16 +28,12 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/presentation/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="93" column="126" selection-start-line="93" selection-start-column="126" selection-end-line="93" selection-end-column="126" />
+            <state relative-caret-position="360">
+              <caret line="139" column="69" selection-start-line="139" selection-start-column="69" selection-end-line="139" selection-end-column="69" />
               <folding>
-                <element signature="e#1439#1885#0" expanded="false" />
                 <element signature="e#1531#1686#0" expanded="false" />
                 <element signature="e#1711#1856#0" expanded="false" />
                 <element signature="e#3577#5352#0" expanded="false" />
-                <element signature="e#5373#5894#0" expanded="false" />
-                <element signature="e#5465#5865#0" expanded="false" />
-                <element signature="e#5506#5827#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -57,14 +52,13 @@
       <file leaf-file-name="screen.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/spectacle/lib/themes/default/screen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="285">
+              <caret line="150" column="16" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="16" />
               <folding>
                 <element signature="e#755#1078#0" expanded="false" />
                 <element signature="e#1096#1131#0" expanded="false" />
                 <element signature="e#1147#1718#0" expanded="false" />
                 <element signature="e#1734#3628#0" expanded="false" />
-                <element signature="e#3646#6767#0" expanded="false" />
                 <element signature="e#3666#3784#0" expanded="false" />
                 <element signature="e#3799#4019#0" expanded="false" />
                 <element signature="e#4033#4175#0" expanded="false" />
@@ -327,12 +321,12 @@
       <workItem from="1476691604711" duration="14494000" />
       <workItem from="1476712233886" duration="641000" />
       <workItem from="1476715135878" duration="1391000" />
-      <workItem from="1476778155332" duration="5817000" />
+      <workItem from="1476778155332" duration="7537000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22343000" />
+    <option name="totallyTimeSpent" value="24063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="0" width="1922" height="1081" extended-state="6" />
@@ -378,13 +372,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1439#1885#0" expanded="false" />
             <element signature="e#1531#1686#0" expanded="false" />
             <element signature="e#1711#1856#0" expanded="false" />
             <element signature="e#3577#5352#0" expanded="false" />
-            <element signature="e#5373#5894#0" expanded="false" />
-            <element signature="e#5465#5865#0" expanded="false" />
-            <element signature="e#5506#5827#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -475,13 +465,9 @@
         <state relative-caret-position="3810">
           <caret line="256" column="89" selection-start-line="256" selection-start-column="89" selection-end-line="256" selection-end-column="89" />
           <folding>
-            <element signature="e#1439#1885#0" expanded="false" />
             <element signature="e#1531#1686#0" expanded="false" />
             <element signature="e#1711#1856#0" expanded="false" />
             <element signature="e#3577#5352#0" expanded="false" />
-            <element signature="e#5373#5894#0" expanded="false" />
-            <element signature="e#5465#5865#0" expanded="false" />
-            <element signature="e#5506#5827#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -564,13 +550,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1439#1885#0" expanded="false" />
             <element signature="e#1531#1686#0" expanded="false" />
             <element signature="e#1711#1856#0" expanded="false" />
             <element signature="e#3577#5352#0" expanded="false" />
-            <element signature="e#5373#5894#0" expanded="false" />
-            <element signature="e#5465#5865#0" expanded="false" />
-            <element signature="e#5506#5827#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -754,16 +736,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spectacle/lib/themes/default/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="162" column="20607" selection-start-line="162" selection-start-column="20607" selection-end-line="162" selection-end-column="20607" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/spectacle/lib/themes/default/screen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="285">
+          <caret line="150" column="16" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="16" />
           <folding>
             <element signature="e#755#1078#0" expanded="false" />
             <element signature="e#1096#1131#0" expanded="false" />
             <element signature="e#1147#1718#0" expanded="false" />
             <element signature="e#1734#3628#0" expanded="false" />
-            <element signature="e#3646#6767#0" expanded="false" />
             <element signature="e#3666#3784#0" expanded="false" />
             <element signature="e#3799#4019#0" expanded="false" />
             <element signature="e#4033#4175#0" expanded="false" />
@@ -784,26 +781,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spectacle/lib/themes/default/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/presentation/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="93" column="126" selection-start-line="93" selection-start-column="126" selection-end-line="93" selection-end-column="126" />
+        <state relative-caret-position="360">
+          <caret line="139" column="69" selection-start-line="139" selection-start-column="69" selection-end-line="139" selection-end-column="69" />
           <folding>
-            <element signature="e#1439#1885#0" expanded="false" />
             <element signature="e#1531#1686#0" expanded="false" />
             <element signature="e#1711#1856#0" expanded="false" />
             <element signature="e#3577#5352#0" expanded="false" />
-            <element signature="e#5373#5894#0" expanded="false" />
-            <element signature="e#5465#5865#0" expanded="false" />
-            <element signature="e#5506#5827#0" expanded="false" />
           </folding>
         </state>
       </provider>
